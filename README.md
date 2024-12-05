@@ -1,5 +1,5 @@
 
-# Team 9 (Wan & Siva)
+# Team 9 (Wan)
 
 ### Public URL here: http://13.229.196.59/
 
@@ -20,7 +20,7 @@ AUC: 0.8854
 
 ## AI300 Capstone Grading
 
-### Feedback from Instructor Min Yan
+### Feedback from Instructor
 
 Great work, Siva and Wan Xiang! Glad to see that you've managed to achieve an AUC of close to 0.9, which is on the higher end, even after feature selection :)
 
