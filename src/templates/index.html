@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Consumer Churn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <div>
+        <h1>Predict Consumer Churn</h1>
+
+        <form method="POST">
+            <div id="parent">
+                <div id='left'>
+
+                    <label for="gender">Gender:</label><br>
+                        <select name="gender" id="gender">
+                        <option value=""></option>
+                        <option value="1">Male</option>
+                        <option value="0" selected>Female</option>
+                    </select><br>
+
+                    <label for="senior_citizen">Senior Citizen:</label><br>
+                    <select name="senior_citizen" id="senior_citizen">
+                        <option value=""></option>
+                        <option value="0" selected>Yes</option>
+                        <option value="1">No</option>
+                    </select><br>
+
+                    <label for="num_referrals">Number of Referrals:</label><br>
+                    <select name="num_referrals" id="num_referrals">
+                        <option value=""></option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10 or more</option>
+                    </select><br><br>
+
+                    <label for="num_dependents">Number of Dependents:</label><br>
+                    <select name="num_dependents" id="num_dependents">
+                        <option value=""></option>
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10 or more</option>
+                    </select><br><br>
+
+                    <label for="contract_type">Contract Type:</label><br>
+                    <select name="contract_type" id="contract_type">
+                        <option value=""></option>
+                        <option value="month-to-month" selected>Month-to-Month</option>
+                        <option value="one_year">One Year</option>
+                        <option value="two_year">Two Year</option>
+                    </select><br><br>
+
+                </div>
+                <div id='right'>
+
+                    <label for="age">Age: </label>
+                    <input type="text" id="age" name="age" value="75"><br>
+                    
+                    <label for="tenure_months">Tenure in Months:</label><br>
+                    <input type="text" id="tenure_months" name="tenure_months" value="3"><br><br>
+
+                    <label for="total_monthly_fee">Total Monthly Fee:</label><br>
+                    <input type="text" id="total_monthly_fee" name="total_monthly_fee" value="85.9"><br><br>
+
+                    <label for="total_charges_quarter">Total charges per quarter:</label><br>
+                    <input type="text" id="total_charges_quarter" name="total_charges_quarter" value="270.8"><br><br>
+
+                    
+
+                    <label for="zip_code">Zip Code</label><br>
+                    <input type="text" id="zip_code" name="zip_code" value="93010"><br><br>
+
+                  
+                    
+                </div>
+            </div>
+
+            <input type="submit" value="Predict">
+        </form>
+        
+
+        <!-- TODO 3: Add h2 element to display model prediction  -->
+        <!--         (Use Jinja templating with if condition)    -->
+        {% if errors %}
+            <p>Errors: {{ errors }}</p>
+        {% endif %}
+
+        {% if prediction is defined %}
+            <h2>Model Prediction: {{ prediction }}</h2>
+        {% endif %}
+
+    </div>
+</body>
+</html>
