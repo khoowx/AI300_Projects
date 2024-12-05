@@ -38,7 +38,7 @@ git rm --cached .DS_Store  # run in project root directory
 git commit -m 'Remove the now ignored file .DS_Store'
 git push
 ```
-p.s. there's a random empty file titled "Wan Xiang" in your main branch, you might want to remove that as well
+
 
 Feel free to reach out if you need further clarification. Wishing you both the best for your future endeavours!
 
