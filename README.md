@@ -22,7 +22,7 @@ AUC: 0.8854
 
 ### Feedback from Instructor
 
-Great work, Siva and Wan Xiang! Glad to see that you've managed to achieve an AUC of close to 0.9, which is on the higher end, even after feature selection :)
+Great work, Wan Xiang! Glad to see that you've managed to achieve an AUC of close to 0.9, which is on the higher end, even after feature selection :)
 
 Since you both have challenged yourselves to go above and beyond, I'd like to encourage you to think about further areas of improvement:
 
